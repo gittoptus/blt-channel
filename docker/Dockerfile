@@ -149,7 +149,7 @@ COPY --from=pre-builder /app /app
 COPY --from=pre-builder /app/.git_sha /app/.git_sha
 
 # Ensure entrypoints are executable and use Unix line endings (fixes Windows git/cache permissions)
-RUN dos2unix /app/docker/entrypoints/*.sh && chmod +x /app/docker/entrypoints/*.sh
+RUN find /app/docker/entrypoints -type f -exec dos2unix {} + -exec chmod +x {} +
 
 WORKDIR /app
 
