@@ -30,5 +30,13 @@ do
   sleep 2;
 done
 
+# Run database migrations and seeds in production
+if [ "$RAILS_ENV" = "production" ]; then
+  echo "Running database migrations..."
+  bundle exec rails db:prepare
+  echo "Running database seeds..."
+  bundle exec rails db:seed
+fi
+
 # Execute the main process of the container
 exec "$@"
