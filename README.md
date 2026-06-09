@@ -1,139 +1,86 @@
-<img src="./.github/screenshots/header.png#gh-light-mode-only" width="100%" alt="Header light mode"/>
-<img src="./.github/screenshots/header-dark.png#gh-dark-mode-only" width="100%" alt="Header dark mode"/>
+# Builtt Channel
 
-___
+O **Builtt Channel** é a plataforma moderna, robusta e omnichannel de atendimento ao cliente da **Builtt**, projetada para unificar conversas, automatizar o suporte com Inteligência Artificial e oferecer uma experiência premium aos usuários.
 
-# Chatwoot
-
-The modern customer support platform, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc.
-
-<p>
-  <img src="https://img.shields.io/circleci/build/github/chatwoot/chatwoot" alt="CircleCI Badge">
-    <a href="https://hub.docker.com/r/chatwoot/chatwoot/"><img src="https://img.shields.io/docker/pulls/chatwoot/chatwoot" alt="Docker Pull Badge"></a>
-  <a href="https://hub.docker.com/r/chatwoot/chatwoot/"><img src="https://img.shields.io/docker/cloud/build/chatwoot/chatwoot" alt="Docker Build Badge"></a>
-  <img src="https://img.shields.io/github/commit-activity/m/chatwoot/chatwoot" alt="Commits-per-month">
-  <a title="Crowdin" target="_self" href="https://chatwoot.crowdin.com/chatwoot"><img src="https://badges.crowdin.net/e/37ced7eba411064bd792feb3b7a28b16/localized.svg"></a>
-  <a href="https://discord.gg/cJXdrwS"><img src="https://img.shields.io/discord/647412545203994635" alt="Discord"></a>
-  <a href="https://status.chatwoot.com"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fchatwoot%2Fstatus%2Fmaster%2Fapi%2Fchatwoot%2Fuptime.json" alt="uptime"></a>
-  <a href="https://status.chatwoot.com"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fchatwoot%2Fstatus%2Fmaster%2Fapi%2Fchatwoot%2Fresponse-time.json" alt="response time"></a>
-  <a href="https://artifacthub.io/packages/helm/chatwoot/chatwoot"><img src="https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/artifact-hub" alt="Artifact HUB"></a>
-</p>
-
-
-<p>
-  <a href="https://heroku.com/deploy?template=https://github.com/chatwoot/chatwoot/tree/master" alt="Deploy to Heroku">
-     <img width="150" alt="Deploy" src="https://www.herokucdn.com/deploy/button.svg"/>
-  </a>
-  <a href="https://marketplace.digitalocean.com/apps/chatwoot?refcode=f2238426a2a8" alt="Deploy to DigitalOcean">
-     <img width="200" alt="Deploy to DO" src="https://www.deploytodo.com/do-btn-blue.svg"/>
-  </a>
-</p>
-
-<img src="./.github/screenshots/dashboard.png#gh-light-mode-only" width="100%" alt="Chat dashboard dark mode"/>
-<img src="./.github/screenshots/dashboard-dark.png#gh-dark-mode-only" width="100%" alt="Chat dashboard"/>
+Baseado em contêineres e otimizado para deploy em nuvem com suporte nativo ao **Easypanel**.
 
 ---
 
-Chatwoot is the modern, open-source, and self-hosted customer support platform designed to help businesses deliver exceptional customer support experience. Built for scale and flexibility, Chatwoot gives you full control over your customer data while providing powerful tools to manage conversations across channels.
+## 🚀 Principais Recursos
 
-### ✨ Captain – AI Agent for Support
+### 💬 Atendimento Omnichannel
+Centralize todas as conversas em uma única caixa de entrada inteligente, independentemente do canal de origem:
+- Chat em sites (widget ao vivo).
+- E-mail.
+- WhatsApp, Instagram, Telegram, Messenger.
+- Integrações customizadas via API.
 
-Supercharge your support with Captain, Chatwoot’s AI agent. Captain helps automate responses, handle common queries, and reduce agent workload—ensuring customers get instant, accurate answers. With Captain, your team can focus on complex conversations while routine questions are resolved automatically. Read more about Captain [here](https://chwt.app/captain-docs).
+### ✨ Captain AI – Agente Inteligente de Suporte
+Automatize o autoatendimento com o agente de IA integrado (**Captain AI**):
+- Integração nativa com APIs da OpenAI.
+- Busca inteligente e contextualizada em documentos de ajuda (FAQ).
+- Transbordo inteligente (handoff) para agentes humanos quando necessário.
+- Guardrails e diretrizes customizáveis para manter o tom de voz da marca.
 
-### 💬 Omnichannel Support Desk
+### 📚 Portal de Ajuda e FAQ (Help Center)
+Crie e publique artigos, tutoriais e guias de autoajuda. Permita que os seus clientes encontrem respostas instantâneas, reduzindo o volume de tickets repetitivos.
 
-Chatwoot centralizes all customer conversations into one powerful inbox, no matter where your customers reach out from. It supports live chat on your website, email, Facebook, Instagram, Twitter, WhatsApp, Telegram, Line, SMS etc.
+### 🗂️ Gestão e Produtividade
+- **Notas Privadas & Menções:** Colaboração direta entre agentes nas conversas.
+- **Políticas de SLA:** Prazos automáticos de primeira resposta e resolução.
+- **Cargos Personalizados (Custom Roles):** Controle granular de acessos e permissões.
+- **Respostas Rápidas (Canned Responses):** Atalhos para mensagens frequentes.
+- **Roteamento Automático:** Distribuição de conversas com base na capacidade de cada atendente.
 
-### 📚 Help center portal
+---
 
-Publish help articles, FAQs, and guides through the built-in Help Center Portal. Enable customers to find answers on their own, reduce repetitive queries, and keep your support team focused on more complex issues.
+## 🛠️ Como Implantar no Easypanel (via Docker Compose)
 
-### 🗂️ Other features
+A aplicação está totalmente configurada para ser compilada e executada diretamente no **Easypanel**.
 
-#### Collaboration & Productivity
+### Passo a Passo para Implantação:
 
-- Private Notes and @mentions for internal team discussions.
-- Labels to organize and categorize conversations.
-- Keyboard Shortcuts and a Command Bar for quick navigation.
-- Canned Responses to reply faster to frequently asked questions.
-- Auto-Assignment to route conversations based on agent availability.
-- Multi-lingual Support to serve customers in multiple languages.
-- Custom Views and Filters for better inbox organization.
-- Business Hours and Auto-Responders to manage response expectations.
-- Teams and Automation tools for scaling support workflows.
-- Agent Capacity Management to balance workload across the team.
+1. **Crie um Serviço Compose no Easypanel:**
+   No painel do seu Easypanel, clique em **+ Service** e selecione o tipo **Compose**.
 
-#### Customer Data & Segmentation
-- Contact Management with profiles and interaction history.
-- Contact Segments and Notes for targeted communication.
-- Campaigns to proactively engage customers.
-- Custom Attributes for storing additional customer data.
-- Pre-Chat Forms to collect user information before starting conversations.
+2. **Configure a Origem do Código (Source):**
+   - **Repository URL**: Preencha com a URL do seu repositório Git privado ou público (ex: GitHub/GitLab).
+   - **Branch**: `main`
+   - **Build Path**: `/`
+   - **Docker Compose File**: `docker-compose.production.yaml`
 
-#### Integrations
-- Slack Integration to manage conversations directly from Slack.
-- Dialogflow Integration for chatbot automation.
-- Dashboard Apps to embed internal tools within Chatwoot.
-- Shopify Integration to view and manage customer orders right within Chatwoot.
-- Use Google Translate to translate messages from your customers in realtime.
-- Create and manage Linear tickets within Chatwoot.
+3. **Chave SSH para Repositórios Privados:**
+   Se o seu repositório for privado, clique em **"Generate SSH Key"** no Easypanel e adicione a chave pública copiada como uma **Deploy Key** nas configurações do seu repositório Git.
 
-#### Reports & Insights
-- Live View of ongoing conversations for real-time monitoring.
-- Conversation, Agent, Inbox, Label, and Team Reports for operational visibility.
-- CSAT Reports to measure customer satisfaction.
-- Downloadable Reports for offline analysis and reporting.
+4. **Variáveis de Ambiente:**
+   Configure as variáveis essenciais diretamente na aba de variáveis de ambiente do seu serviço no Easypanel. Use as definições do arquivo [.env.example](file:///c:/Users/augus/.workspace/chatwoot/chatwoot-develop/.env.example) como base. Destaque para as chaves principais:
+   - `SECRET_KEY_BASE`: Chave única segura gerada para o Rails.
+   - `FRONTEND_URL`: URL pública onde a aplicação estará acessível.
+   - `REDIS_PASSWORD`: Senha de conexão interna do banco Redis.
 
+5. **Clique em Deploy:**
+   O Easypanel irá clonar o repositório, compilar as imagens a partir do [Dockerfile](file:///c:/Users/augus/.workspace/chatwoot/chatwoot-develop/docker/Dockerfile) local com os seus ajustes de marca e iniciar a pilha de serviços.
 
-## Documentation
+---
 
-Detailed documentation is available at [chatwoot.com/help-center](https://www.chatwoot.com/help-center).
+## 💻 Desenvolvimento Local
 
-## Translation process
+Para rodar e testar as alterações localmente utilizando Docker Compose de desenvolvimento:
 
-The translation process for Chatwoot web and mobile app is managed at [https://translate.chatwoot.com](https://translate.chatwoot.com) using Crowdin. Please read the [translation guide](https://www.chatwoot.com/docs/contributing/translating-chatwoot-to-your-language) for contributing to Chatwoot.
+1. Renomeie o arquivo de variáveis de ambiente:
+   ```bash
+   cp .env.example .env
+   ```
+2. Configure as credenciais necessárias no arquivo `.env`.
+3. Inicie os contêineres de desenvolvimento:
+   ```bash
+   docker compose up --build
+   ```
+4. A aplicação estará disponível localmente em `http://localhost:3000`.
 
-## Branching model
+---
 
-We use the [git-flow](https://nvie.com/posts/a-successful-git-branching-model/) branching model. The base branch is `develop`.
-If you are looking for a stable version, please use the `master` or tags labelled as `v1.x.x`.
+## ⚖️ Licença
 
-## Deployment
-
-### Heroku one-click deploy
-
-Deploying Chatwoot to Heroku is a breeze. It's as simple as clicking this button:
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/chatwoot/chatwoot/tree/master)
-
-Follow this [link](https://www.chatwoot.com/docs/environment-variables) to understand setting the correct environment variables for the app to work with all the features. There might be breakages if you do not set the relevant environment variables.
-
-
-### DigitalOcean 1-Click Kubernetes deployment
-
-Chatwoot now supports 1-Click deployment to DigitalOcean as a kubernetes app.
-
-<a href="https://marketplace.digitalocean.com/apps/chatwoot?refcode=f2238426a2a8" alt="Deploy to DigitalOcean">
-  <img width="200" alt="Deploy to DO" src="https://www.deploytodo.com/do-btn-blue.svg"/>
-</a>
-
-### Other deployment options
-
-For other supported options, checkout our [deployment page](https://chatwoot.com/deploy).
-
-## Security
-
-Looking to report a vulnerability? Please refer our [SECURITY.md](./SECURITY.md) file.
-
-## Community
-
-If you need help or just want to hang out, come, say hi on our [Discord](https://discord.gg/cJXdrwS) server.
-
-## Contributors
-
-Thanks goes to all these [wonderful people](https://www.chatwoot.com/docs/contributors):
-
-<a href="https://github.com/chatwoot/chatwoot/graphs/contributors"><img src="https://opencollective.com/chatwoot/contributors.svg?width=890&button=false" /></a>
-
-
-*Chatwoot* &copy; 2017-2026, Chatwoot Inc - Released under the MIT License.
+O *Builtt Channel* é baseado no núcleo Chatwoot, publicado sob a licença MIT. 
+&copy; 2026, Builtt. Todos os direitos reservados.
