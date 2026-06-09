@@ -128,6 +128,7 @@ RUN apk update && apk add --no-cache \
   imagemagick \
   git \
   vips \
+  dos2unix \
   && gem install bundler -v "$BUNDLER_VERSION"
 
 COPY --from=node /usr/local/bin/node /usr/local/bin/
@@ -146,6 +147,9 @@ COPY --from=pre-builder /app /app
 
 # Copy .git_sha file from pre-builder stage
 COPY --from=pre-builder /app/.git_sha /app/.git_sha
+
+# Ensure entrypoints are executable and use Unix line endings (fixes Windows git/cache permissions)
+RUN dos2unix /app/docker/entrypoints/*.sh && chmod +x /app/docker/entrypoints/*.sh
 
 WORKDIR /app
 
