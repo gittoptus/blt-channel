@@ -1,5 +1,6 @@
 x-base: &base
   image: ghcr.io/gittoptus/blt-channel:latest
+  pull_policy: always
   env_file: .env ## Change this file for customized env variables
   volumes:
     - storage_data:/app/storage
